@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F8F6F1"
+    android:orientation="vertical">
+
+    <!--单词列表-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#DBD4CC">
+        <Button
+            android:id="@+id/vocb_list_go_back"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:background="@drawable/vocb_list_back" />
+
+        <TextView
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单词列表"
+            android:gravity="center"
+            android:paddingRight="45dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B2ADA8"/>
+    <!--已学、未学、已斩、收藏-->
+    <!--style="?android:attr/borderlessButtonStyle"去掉按钮阴影-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#DBD4CC">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/vocb_list_studied_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="已学单词"
+                android:textColor="#76736A"
+                style="?android:attr/borderlessButtonStyle"/>
+            <TextView
+                android:id="@+id/vocb_list_studied_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DBD4CC"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/vocb_list_unstudied_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="未学单词"
+                android:textColor="#76736A"
+                style="?android:attr/borderlessButtonStyle"/>
+            <TextView
+                android:id="@+id/vocb_list_unstudied_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DBD4CC"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/vocb_list_got_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="已斩单词"
+                android:textColor="#76736A"
+                style="?android:attr/borderlessButtonStyle"/>
+            <TextView
+                android:id="@+id/vocb_list_got_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DBD4CC"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/vocb_list_collect_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="收藏单词"
+                android:textColor="#76736A"
+                style="?android:attr/borderlessButtonStyle"/>
+            <TextView
+                android:id="@+id/vocb_list_collect_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DBD4CC"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--总数、排序-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#EFEEEA">
+
+        <TextView
+            android:id="@+id/vocb_list_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="单词总数:"/>
+        <Button
+            android:id="@+id/vocb_list_order"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="字母顺序"
+            android:textColor="#76736A"
+            style="?android:attr/borderlessButtonStyle" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/vocb_list_word_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

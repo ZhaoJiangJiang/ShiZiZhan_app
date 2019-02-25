@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#DBD4CC">
+        <Button
+            android:id="@+id/go_home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/home"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="match_parent"
+            android:text="单词电台"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingRight="50dp"/>
+    </LinearLayout>
+
+    <!--单词音频、真题音频-->
+    <!--style="?android:attr/borderlessButtonStyle"去掉按钮阴影-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#E1DAD3">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/wordTv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="单词音频"
+                android:textColor="#76736A"
+                style="?android:attr/borderlessButtonStyle"/>
+            <TextView
+                android:id="@+id/word_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/examTv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="真题音频"
+                android:textColor="#76736A"
+                style="?android:attr/borderlessButtonStyle"/>
+            <TextView
+                android:id="@+id/exam_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

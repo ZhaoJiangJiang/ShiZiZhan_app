@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/exam_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="考试听力标题"
+        android:paddingLeft="25dp"
+        android:paddingTop="40dp"
+        android:textSize="16sp"
+        android:paddingBottom="3dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C2B9A8"/>
+
+</LinearLayout>

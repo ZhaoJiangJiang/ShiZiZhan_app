@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_menu_myPlan"
+            android:icon="@drawable/nav_menu_my_plan"
+            android:title="我的计划" />
+
+        <item
+            android:id="@+id/nav_menu_myCollection"
+            android:icon="@drawable/nav_menu_my_collection"
+            android:title="我的收藏" />
+
+        <item
+            android:id="@+id/nav_menu_advice"
+            android:icon="@drawable/nav_menu_advice"
+            android:title="意见反馈" />
+
+        <item
+            android:id="@+id/nav_menu_about_us"
+            android:icon="@drawable/nav_menu_about_us"
+            android:title="关于我们" />
+
+        <item
+            android:id="@+id/nav_menu_quit"
+            android:icon="@drawable/nav_menu_quit"
+            android:title="退出账号" />
+
+    </group>
+
+</menu>

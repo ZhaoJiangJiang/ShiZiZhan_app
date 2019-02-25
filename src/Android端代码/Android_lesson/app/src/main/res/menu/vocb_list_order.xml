@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--orderInCategory优先级-->
+    <item
+        android:id="@+id/vocb_list_order_up_order"
+        android:orderInCategory="100"
+        android:title="字母顺序"/>
+
+    <item
+        android:id="@+id/vocb_list_order_down_order"
+        android:orderInCategory="100"
+        android:title="字母倒序"/>
+
+</menu>

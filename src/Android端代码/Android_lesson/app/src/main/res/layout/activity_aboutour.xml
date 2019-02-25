@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us!"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="90dp"
+        android:layout_gravity="center"
+        android:layout_height="3dp"
+        android:background="#ccc"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:text="It is not cannot love, is only cannot injury."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:src="@drawable/nav_icon_test"
+             android:layout_marginLeft="50dp"/>
+         <LinearLayout
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginLeft="20dp">
+              <TextView
+                  android:layout_width="100dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="50dp"
+                  android:layout_marginLeft="30dp"
+                  android:layout_marginTop="10dp"
+                  android:text="姓名：赵江江"/>
+              <TextView
+                  android:layout_width="200dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="50dp"
+                  android:layout_marginLeft="30dp"
+                  android:layout_marginTop="3dp"
+                  android:text="编号：201605010215"/>
+              <TextView
+                  android:layout_width="100dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="50dp"
+                  android:layout_marginLeft="30dp"
+                  android:layout_marginTop="3dp"
+                  android:text="爱好：玩耍"/>
+              <TextView
+                  android:layout_width="100dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="50dp"
+                  android:layout_marginLeft="30dp"
+                  android:layout_marginTop="3dp"
+                  android:text="人品：优"/>
+         </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="王铮汉"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:text="编号：201602150133"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:text="爱好：看番打码"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:text="人品：优"/>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/nav_icon_test" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/nav_icon_test"
+            android:layout_marginLeft="50dp"/>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="李天赐"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:text="编号：201602150116"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:text="爱好：打码"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:text="人品：优"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="地址：浙江省杭州市临安区浙江农林大学"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="邮箱：121625150@qq.com"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="电话：18058431808"/>
+
+</LinearLayout>

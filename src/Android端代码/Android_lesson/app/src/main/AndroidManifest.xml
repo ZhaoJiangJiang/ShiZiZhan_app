@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.classwork.com.android_lesson">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--登录-->
+        <activity android:name=".LoginActivity"/>
+
+        <!--注册-->
+        <activity android:name=".RegisterActivity"/>
+
+        <!--忘了密码-->
+        <activity android:name=".ForgetpassActivity"/>
+
+        <!--第一界面-->
+        <activity android:name="._1stActivity"
+            android:label=""/>
+
+        <!--搜索界面-->
+        <activity android:name=".SearchActivity"/>
+
+        <!--我的计划-->
+        <activity android:name=".MyplanActivity" />
+
+        <!--意见反馈-->
+        <activity android:name=".FeedbackActivity"/>
+
+        <!--单词列表-->
+        <activity android:name=".VocblistActivity" />
+
+        <!--单词详情-->
+        <activity android:name=".VocbdetailActivity" />
+
+        <!--关于我们-->
+        <activity android:name=".AboutourActivity" />
+        <!--单词电台-->
+        <activity android:name=".WordTvActivity" />
+        <!--考试音频-->
+        <activity android:name=".ExamTvActivity"></activity>
+        <!--开始背单词-->
+        <activity android:name=".BeginbackActivity" />
+        <!--单词提示-->
+        <activity android:name=".HintActivity" />
+    </application>
+
+</manifest>

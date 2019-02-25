@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E9E4D9">
+
+    <include layout="@layout/tv_title_layout"/>
+
+    <!--中间白色用来展示的框-->
+    <TextView
+        android:id="@+id/show_tv"
+        android:layout_width="350dp"
+        android:layout_height="190dp"
+        android:background="#F8F6F1"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:drawableTop="@drawable/word_tv"
+        android:padding="10dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/word_tv_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="换一批"
+        android:textSize="16sp"
+        android:textColor="#C2B9A8"
+        android:layout_margin="10dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+</LinearLayout>
