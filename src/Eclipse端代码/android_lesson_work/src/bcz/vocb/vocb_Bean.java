@@ -6,12 +6,19 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * vocb_Bean()。
+ * vocb类的model。<br>
+ * @author 赵江江
+ *
+ */
 
 public class vocb_Bean {
 	
 	/**
-	 * 得到所有数据
+	 * 得到所有数据。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
 	 * @return
 	 */
 	public List<vocb_Info> getAll(){
@@ -46,6 +53,13 @@ public class vocb_Bean {
 		return data;
 	}
 	
+	/**
+	 * 获得英文单词为queryData的vocb。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
+	 * @param queryData 英文单词
+	 * @return
+	 */
 	public List<vocb_Info> getWordByEnglish(String queryData) {
 		List<vocb_Info> data = new ArrayList<>();
 		Connection con = DBCon.getConnection();
@@ -82,6 +96,13 @@ public class vocb_Bean {
 		return data;
 	}
 	
+	/**
+	 * 增加新单词。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
+	 * @param addInfo 增加的vocb
+	 * @return
+	 */
 	public int addWord(vocb_Info addInfo) {
 		String EngStr = addInfo.getEnglish();
 		List<vocb_Info> data = getWordByEnglish(EngStr);
@@ -114,6 +135,13 @@ public class vocb_Bean {
 		return 0;
 	}
 	
+	/**
+	 * 删除单词。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
+	 * @param delInfo 删除的单词
+	 * @return
+	 */
 	public int delWordByEnglish(String delInfo) {
 		if (delInfo == null || delInfo.length() == 0) {
 			return 1;

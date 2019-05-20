@@ -1,5 +1,11 @@
 package bcz.user;
 
+/**
+ * 封装了user类的信息。<br>
+ * @author 赵江江
+ *
+ */
+
 public class user_Info {
 	String account;
 	String password;

@@ -1,5 +1,10 @@
 package bcz.vocb;
 
+/**
+ * 封装了vocb类的信息。<br>
+ * @author 赵江江
+ *
+ */
 public class vocb_Info {
 	private String English;
 	private String Chinese;

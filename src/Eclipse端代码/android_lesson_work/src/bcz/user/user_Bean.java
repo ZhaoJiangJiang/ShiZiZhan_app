@@ -9,9 +9,21 @@ import java.util.List;
 import java.util.Map;
 
 import bcz.vocb.DBCon;
+/**
+ * user_Bean。<br>
+ * user类的Model。<br>
+ * @author 赵江江
+ *
+ */
 
 public class user_Bean {
 
+	/**
+	 * 获得所有user。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
+	 * @return
+	 */
 	public List<user_Info> getAll() {
 		List<user_Info> data = new ArrayList<>();
 		Connection con = DBCon.getConnection();
@@ -40,6 +52,13 @@ public class user_Bean {
 		return data;
 	}
 
+	/**
+	 * 通过userName获得User。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
+	 * @param queryUsername 用户名
+	 * @return
+	 */
 	public List<user_Info> getUserByUsername(String queryUsername) {
 		List<user_Info> data = new ArrayList<>();
 		Connection con = DBCon.getConnection();
@@ -71,6 +90,13 @@ public class user_Bean {
 		return data;
 	}
 
+	/**
+	 * 通过userAccount获得user。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
+	 * @param queryAccount
+	 * @return
+	 */
 	public List<user_Info> getUserByAccount(String queryAccount) {
 		List<user_Info> data = new ArrayList<>();
 		Connection con = DBCon.getConnection();
@@ -198,6 +224,14 @@ public class user_Bean {
 		return isAutoLogin;
 	}
 
+	/**
+	 * 增加用户。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
+	 * @param addAccount 账号
+	 * @param password	密码
+	 * @param Username	用户名
+	 */
 	public void addUser(String addAccount, String password, String Username) {
 		Connection con = DBCon.getConnection();
 		try {
@@ -218,6 +252,13 @@ public class user_Bean {
 		}
 	}
 
+	/**
+	 * 判断该Account是否存在。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
+	 * @param Account 账号
+	 * @return
+	 */
 	public int isAccountExist(String Account) {
 		List<user_Info> data = getUserByAccount(Account);
 		if (data.isEmpty() || data.size() == 0) {
@@ -226,6 +267,13 @@ public class user_Bean {
 		return 1; // 1表示存在
 	}
 
+	/**
+	 * 根据Account获得用户坚持天数。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
+	 * @param Account 账户
+	 * @return
+	 */
 	public int getInsistDay(String Account) {
 		int day = 0;
 		if (Account == null) {
@@ -262,6 +310,13 @@ public class user_Bean {
 		return day;
 	}
 
+	/**
+	 * 增加用户名为Account的坚持天数。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
+	 * @param Account 账户
+	 * @return
+	 */
 	public int addInsistDay(String Account) {
 		// 用户不存在
 		List<user_Info> data = getUserByAccount(Account);
@@ -294,6 +349,13 @@ public class user_Bean {
 		return 1;
 	}
 
+	/**
+	 * 获得账户为Account计划天数。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
+	 * @param Account 账户
+	 * @return
+	 */
 	public int getPlanNum(String Account) {
 		int num = 0;
 		if (Account == null) {
@@ -330,6 +392,12 @@ public class user_Bean {
 		return num;
 	}
 
+	/**
+	 * 设置账号为Account的用户的坚持天数为num。<br>
+	 * @param num 坚持天数
+	 * @param Account 账号
+	 * @return
+	 */
 	public int setPlanNum(String num, String Account) {
 		// 用户不存在
 		List<user_Info> data = getUserByAccount(Account);
@@ -428,6 +496,13 @@ public class user_Bean {
 		return 1;
 	}
 	
+	/**
+	 * 获得账号Account的收藏单词。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
+	 * @param Account
+	 * @return
+	 */
 	public String getCollection(String Account) {
 		if (Account == null) {
 			return null;
@@ -463,6 +538,13 @@ public class user_Bean {
 		return collection;
 	}
 	
+	/**
+	 * 获得账号Account的已学习单词。<br>
+	 * 非静态方法。<br>
+	 * 通过实例对象调用该方法。<br>
+	 * @param Account
+	 * @return
+	 */
 	public String getStudied(String Account) {
 		if (Account == null) {
 			return null;
